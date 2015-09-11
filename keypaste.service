@@ -1,0 +1,9 @@
+[Unit]
+Description=Paste keys from google spreadsheet
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/keypaste.sh
+
+[Install]
+WantedBy=multi-user.target
