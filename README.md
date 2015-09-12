@@ -1,4 +1,4 @@
-# WORkSHOP RUNNER
+# WORKSHOP RUNNER
 
 The goal of this tool is to facilitate setting up the workshop in which students are using remote vm's.
 It should be easy to collect all ip addresses of running machines and collect public keys from students to allow password-less login.
