@@ -7,6 +7,8 @@ Current implementation uses:
 - google spreadsheet to collect ip addresses and public keys
 - [gspread](https://gspread.readthedocs.org) to talk to spreadsheet with Python script
 	- this requires authentication with OAuth2, the details can be read [here](https://gspread.readthedocs.org/en/latest/oauth2.html)
+- Bash script runs the docker container that runs the Python script
+- Bash script can be used to atomatically run with vm start with systemd
 	
 Unfortunately the solution suffers from race conditions when multiple vms want to edit spreadsheet at the same time.
 More reliable and robust solution, instead of spreadsheet `hack` is needed.
